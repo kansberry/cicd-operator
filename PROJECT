@@ -1,0 +1,13 @@
+domain: cicd.com
+layout: go.kubebuilder.io/v3
+projectName: cicd-operator
+repo: github.com/kansberry/cicd-operator
+resources:
+- crdVersion: v1
+  group: cicd
+  kind: CIBuild
+  version: v1alpha1
+version: 3-alpha
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
